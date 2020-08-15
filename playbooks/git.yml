@@ -1,0 +1,10 @@
+---
+- hosts : web-server
+  gather_facts: no
+  tasks :
+  - name: install git
+    apt:
+     name: git
+     state: present
+     update_cache: yes
+  
